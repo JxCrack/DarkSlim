@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset utf-8>
+		<link href="assets/css/theme.css" rel="stylesheet"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<title>AniGo • JikanAPI</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	</head>
+	<body>
+		<span class="loadingBar" id="loadingBar"></span>
+		<div class="header">
+			<h1 onclick="window.location.reload()">AniGo</h1>
+			<a href="#">Trending</a>
+			<a href="#">A-Z List</a>
+			<a href="#">Latest</a>
+			<a onclick="random()">Random</a>
+			
+			<a class="highlighted right" href="#"><span class="material-symbols-outlined">upgrade</span>Premium</a>
+			<input name="" type="text" class="right" id="search_feature" placeholder="Search Anime or Series"/>
+		</div>
+		
+		<div class="featured_box" id="latest">
+			<h2 style="padding: 8px;display: inline-block;">Latest Anime</h2><a href="#" class="button">More on Latest ></a><br>
+		</div>
+		
+		<div class="search_result hidden" id="search_result">
+			<h2 style="padding: 8px;display: inline-block;">Searching</h2><br>
+			<div></div>
+		</div>
+		
+		<div class="floatingDetail hidden" id="f_detail">
+			<img src=""></img><br>
+			<span class="ratings">0&nbsp;&nbsp;/&nbsp;&nbsp;0</span>
+			
+			<div class="details">
+				<div>
+					<a class="button red" onclick="closeDetailDialog()">Close Window</a>
+				</div>
+				<h2>placeholder_title</h2>
+				<h3 style="color: rgb(calc(127 / 2), calc(127 / 2), calc(127 / 2));">placeholder_title_english & placeholder_title_japanese</h3>
+				<ul type="square" style="padding-left: 24px;">
+					<li>Status	: </li>
+					<li>Duration	: </li>
+					<li>Studios	: </li>
+					<li>Type	: </li>
+					<li>Episodes	: </li>
+				</ul>
+				<div></div>
+				
+				<hr>
+				<div style="margin-right: 16px;margin-top: 8px;display: inline-block;" id="fd_det_index">
+					<a class="button bolden" name="syn">Synopsis</a><a class="button" name="trl">Trailer</a><a class="button" name="char">Characters</a>
+				</div>
+				<div style="margin-top: 8px;display: block;" id="fd_det_content"></div>
+				<hr>
+				
+				
+			</div><br>
+			
+			<a class="button" style="margin-top: 16px;padding: 8px 12px;width: calc(232px - (12px * 2));background-color: rgb(24, 24, 24);text-align: center;box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;" href="https://myanimelist.net/anime/">Check on MyAnimeList</a>
+		</div>
+		
+		<script src="assets/js/document_script.js"></script>
+		<script src="assets/js/jikan_api.js"></script>
+		
+		<div>
+			<a class="button">Top Anime</a>
+			<a class="button">Top Series</a>
+		</div>
+	</body>
+</html>
